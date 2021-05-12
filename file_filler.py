@@ -31,15 +31,15 @@ while True:
     f.write(s)
     f.close()
 
-    data = [index,
-            math.sin(math.cos(index5)),
-            math.pow(math.sin(index6), 2) / 5 + math.cos(index6 / 2) * math.sin(index6),
-            math.pow(math.sin(index7), 2) * math.cos(index7),
-            math.sin(index8 + math.pi / 4) + math.cos(index8 + math.pi / 4)]
+    data1 = [index,
+             math.sin(math.cos(index5)),
+             math.pow(math.sin(index6), 2) / 5 + math.cos(index6 / 2) * math.sin(index6),
+             math.pow(math.sin(index7), 2) * math.cos(index7),
+             math.sin(index8 + math.pi / 4) + math.cos(index8 + math.pi / 4)]
     s = ""
 
-    for i in range(len(data)):
-        s += f"{data[i]} "
+    for i in range(len(data1)):
+        s += f"{data1[i]} "
 
     s += "\n"
     f = open('DATA/folderF/dataF.dat', 'a')
@@ -88,6 +88,7 @@ while True:
                          f"{index4}\n",
                          f"{index5}\n",
                          f"{index6}\n",
-                         f"{index7}\n"])
+                         f"{index7}\n",
+                         f"{index8}\n"])
 
     sleep(0.5)
