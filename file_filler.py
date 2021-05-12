@@ -56,29 +56,29 @@ while True:
     index7 += 0.1
     index8 += 0.1
 
-    if index1 >= math.pi * 2:
-        index1 = 0
-
-    if index2 >= 4:
-        index2 = 0
-
-    if index3 >= math.pi:
-        index3 = 0
-
-    if index4 >= math.pi:
-        index4 = 0
-
-    if index5 >= math.pi * 2:
-        index5 = 0
-
-    if index6 >= math.pi * 4:
-        index6 = 0
-
-    if index7 >= math.pi * 2:
-        index7 = 0
-
-    if index8 >= math.pi * 2:
-        index8 = 0
+    # if index1 >= math.pi * 2:
+    #     index1 = 0
+    #
+    # if index2 >= 4:
+    #     index2 = 0
+    #
+    # if index3 >= math.pi:
+    #     index3 = 0
+    #
+    # if index4 >= math.pi:
+    #     index4 = 0
+    #
+    # if index5 >= math.pi * 2:
+    #     index5 = 0
+    #
+    # if index6 >= math.pi * 4:
+    #     index6 = 0
+    #
+    # if index7 >= math.pi * 2:
+    #     index7 = 0
+    #
+    # if index8 >= math.pi * 2:
+    #     index8 = 0
 
     with open('indices.txt', 'w') as file:
         file.writelines([f"{index}\n",
