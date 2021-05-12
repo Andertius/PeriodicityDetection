@@ -71,10 +71,15 @@
 import govnocode
 
 
+value_lst = []
+
 while True:
-    lst = []
+    boolean_lst = []
     boolean1 = False
     boolean2 = False
+
+    value1 = 0.0
+    value2 = 0.0
 
     for i in range(4):
         boolean1, value1 = govnocode.run_algorithm('DATA/folderF/dataF.dat', i + 1)
@@ -82,10 +87,14 @@ while True:
     for i in range(4):
         boolean2, value2 = govnocode.run_algorithm('DATA/folderB/dataB.dat', i + 1)
 
-    lst.append(boolean1)
-    lst.append(boolean2)
+    boolean_lst.append(boolean1)
+    boolean_lst.append(boolean2)
 
-    if not lst.__contains__(False):
+    value_lst.append(value1)
+    value_lst.append(value2)
+
+    if not boolean_lst.__contains__(False):
         break
 
-print("Stop!!!!!!")
+print(f"avg: {sum(value_lst) / len(value_lst)}")
+print("Stop")

@@ -239,5 +239,5 @@ def run_algorithm(filename, column_number):
         # plot the time domain signal and fourier series component
         fourier_sinusoids(x, f, w, 300)
 
-    print(1 / max_f)
+    # print(1 / max_f)
     return 1 / max_f != len(float_array), 1 / max_f

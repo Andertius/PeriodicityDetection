@@ -53,26 +53,6 @@ while True:
     index7 += 0.1
     index8 += 0.1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     if index1 >= math.pi * 2:
         index1 = 0
 
