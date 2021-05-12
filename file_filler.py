@@ -2,15 +2,18 @@ from time import sleep
 import math
 
 
-index = 0
-index1 = 0.0
-index2 = 0.0
-index3 = 0.0
-index4 = 0.0
-index5 = 0.0
-index6 = 0.0
-index7 = 0.0
-index8 = 0.0
+with open('indices.txt', 'r') as file:
+    indices = file.readlines()
+
+index = int(indices[0])
+index1 = float(indices[1])
+index2 = float(indices[2])
+index3 = float(indices[3])
+index4 = float(indices[4])
+index5 = float(indices[5])
+index6 = float(indices[6])
+index7 = float(indices[7])
+index8 = float(indices[8])
 
 while True:
     data = [index,
@@ -76,5 +79,15 @@ while True:
 
     if index8 >= math.pi * 2:
         index8 = 0
+
+    with open('indices.txt', 'w') as file:
+        file.writelines([f"{index}\n",
+                         f"{index1}\n",
+                         f"{index2}\n",
+                         f"{index3}\n",
+                         f"{index4}\n",
+                         f"{index5}\n",
+                         f"{index6}\n",
+                         f"{index7}\n"])
 
     sleep(0.5)
